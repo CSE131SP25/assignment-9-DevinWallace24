@@ -36,7 +36,7 @@ public class Game {
             }
 
             updateDrawing();  // Update the screen with the new game state
-            StdDraw.pause(50);  // Pause for 50 milliseconds to control the game speed
+            StdDraw.pause(50);  
         }
 			/*
 			 * 1. Pass direction to your snake
