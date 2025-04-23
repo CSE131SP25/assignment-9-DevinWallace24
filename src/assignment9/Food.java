@@ -14,6 +14,8 @@ public class Food {
 	 */
 	public Food() {
 		//FIXME
+		this.x = Math.random() * (1 - 2 * FOOD_SIZE) + FOOD_SIZE;  // Random x between -1+FOOD_SIZE and 1-FOOD_SIZE
+        this.y = Math.random() * (1 - 2 * FOOD_SIZE) + FOOD_SIZE;
 	}
 	
 	/**
@@ -21,6 +23,19 @@ public class Food {
 	 */
 	public void draw() {
 		//FIXME
+		StdDraw.setPenColor(Color.RED);  // Set the color for the food (you can choose other colors too)
+        StdDraw.filledCircle(x, y, FOOD_SIZE);
 	}
+	
+	public double getX() {
+        return x;
+    }
+
+    /**
+     * Returns the y-coordinate of the food.
+     */
+    public double getY() {
+        return y;
+    }
 	
 }
